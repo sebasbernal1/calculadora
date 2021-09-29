@@ -43,3 +43,13 @@ function dividir(){
     document.getElementById('resultado').innerHTML = `Resultado: ${resultado}`;
     console.log(`Resultado: ${resultado}`);
 }
+
+function limpiar(){
+
+    const forma = document.getElementById('forma');
+    let operandoA = forma['operandoA'];
+    let operandoB = forma['operandoB'];
+    document.getElementById('resultado').innerHTML = '';
+    operandoA.value ='';
+    operandoB.value ='';
+}
